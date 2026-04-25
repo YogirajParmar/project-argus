@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VehicleDocs HQ | Revolutionize Your Document Management</title>
+  <meta name="description"
+    content="Manage Your Vehicle PUC, Insurance, and RC effortlessly with VehicleDocs HQ. Smart reminders and secure storage in a premium desktop application.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Glassmorphism Navbar -->
+  <nav id="top-nav">
+    <a href="#" class="logo">VehicleDocs HQ</a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#preview">Preview</a>
+    </div>
+    <a href="#download" class="btn btn-primary">Sign Up</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">NEW: Desktop App v2.0</span>
+      <h1>Revolutionize Your Document Management</h1>
+      <p>Track PUC, Insurance, and RC records effortlessly. Get smart reminders before expiry and keep your vehicles
+        compliant without the stress.</p>
+      <div class="hero-actions">
+        <a href="#download" class="btn btn-primary">Get Started Now</a>
+        <a href="#preview" class="btn btn-secondary">Watch Demo</a>
+      </div>
+    </div>
+
+    <!-- <div class="hero-mockup" id="preview">
+      <img src="hero-mockup.png" alt="VehicleDocs HQ Application Mockup" />
+    </div> -->
+  </section>
+
+  <!-- Features Section -->
+  <div class="features-wrapper">
+    <section id="features" class="features">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <h2>Everything you need for compliance</h2>
+        <p>Built for efficiency and security. Take control of your vehicle documentation with our state-of-the-art
+          tools.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3>Smart Reminders</h3>
+          <p>Intelligent notifications sent straight to your desktop before your PUC or Insurance expires.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Local</h3>
+          <p>Your privacy is our priority. All sensitive vehicle data is stored securely on your local system.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast & Lightweight</h3>
+          <p>Engineered for speed. Our application runs smoothly in the background without hogging resources.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <h2>Simple, Transparent Pricing</h2>
+    </div>
+
+    <div class="pricing-grid" style="display: flex; justify-content: center;">
+      <!-- Single Plan -->
+      <div class="pricing-card popular" style="max-width: 500px; width: 100%;">
+        <span class="popular-badge">Lifetime License</span>
+        <h3>Pro License</h3>
+        <p>Everything you need for vehicle compliance</p>
+        <div class="price">₹499<span>/lifetime</span></div>
+        <ul class="features-list">
+          <li>Unlimited Vehicles</li>
+          <li>PUC & Insurance Tracking</li>
+          <li>RC & Service Tracking</li>
+          <li>Local Backup & Secure Storage</li>
+          <li>Smart Reminders</li>
+          <li>Priority Support</li>
+        </ul>
+
+        <button id="buy-btn" class="btn btn-primary buy-btn-glow">Buy License Now — ₹499</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA Section -->
+  <section id="download" class="download-cta" style="display: none;">
+    <h2>Ready to simplify your life?</h2>
+    <p>Join thousands of users who never miss a document expiry.</p>
+    <a href="/downloads/app.exe" class="btn btn-primary">
+      Download for Windows
+    </a>
+    <p class="version-info">Version 2.0.4 | Requires Windows 10+</p>
+  </section>
+
+  <!-- Email Modal Overlay -->
+  <div id="email-modal-overlay" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <button id="close-modal" class="close-btn">&times;</button>
+      <h3 style="color: var(--on-surface);">Enter Your Email</h3>
+      <p style="margin-bottom: 0;">We'll send your license key and invoice to this address.</p>
+      <div style="margin-top: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
+        <input type="email" id="modal-user-email" placeholder="name@example.com" required />
+      </div>
+      <button id="modal-proceed-btn" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Continue to Payment</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div style="margin-bottom: 2.5rem;">
+      <a href="#" class="logo" style="display: block; margin-bottom: 1rem;">VehicleDocs HQ</a>
+      <div class="nav-links" style="display: flex; justify-content: center; gap: 2rem;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <p>© 2026 VehicleDocs HQ. All rights reserved.</p>
+  </footer>
+
+</body>
+
+<!-- Add Razorpay script -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+
+<script src="script.js"></script>
+
+</html>
