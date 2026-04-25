@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VehicleDocs HQ | Revolutionize Your Document Management</title>
+  <title>DocAlert | Revolutionize Your Document Management</title>
   <meta name="description"
-    content="Manage Your Vehicle PUC, Insurance, and RC effortlessly with VehicleDocs HQ. Smart reminders and secure storage in a premium desktop application.">
+    content="Manage Your Vehicle PUC, Insurance, and RC effortlessly with DocAlert. Smart reminders and secure storage in a premium desktop application.">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -14,31 +14,74 @@
 
   <!-- Glassmorphism Navbar -->
   <nav id="top-nav">
-    <a href="#" class="logo">VehicleDocs HQ</a>
+    <a href="#" class="logo">DocAlert</a>
     <div class="nav-links">
+      <a href="#about">About</a>
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
-      <a href="#preview">Preview</a>
     </div>
-    <a href="#download" class="btn btn-primary">Sign Up</a>
+    <a href="#download" class="btn btn-primary" style="display: none;">Sign Up</a>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" style="position: relative;">
     <div class="hero-content">
-      <span class="hero-badge">NEW: Desktop App v2.0</span>
-      <h1>Revolutionize Your Document Management</h1>
-      <p>Track PUC, Insurance, and RC records effortlessly. Get smart reminders before expiry and keep your vehicles
-        compliant without the stress.</p>
+      <span class="hero-badge">NEW: DocAlert v2.0</span>
+      <h1 class="hero-title"
+        style="background: linear-gradient(135deg, var(--on-surface), var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 4rem;">
+        Your Vehicle's Digital Glovebox</h1>
+      <p style="font-size: 1.25rem;">Never pay a late fine again. Track PUC, Insurance, and RC records effortlessly with
+        smart desktop reminders.</p>
       <div class="hero-actions">
-        <a href="#download" class="btn btn-primary">Get Started Now</a>
-        <a href="#preview" class="btn btn-secondary">Watch Demo</a>
+        <a href="#pricing" class="btn btn-primary">Get Started Now</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Abstract Floating UI replacing image mockup -->
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <span class="icon">📄</span>
+        <div class="card-info">
+          <strong>Car Insurance</strong>
+          <span class="status ok">Active • 8 Months left</span>
+        </div>
+      </div>
+      <div class="floating-card card-2">
+        <span class="icon">💨</span>
+        <div class="card-info">
+          <strong>PUC Certificate</strong>
+          <span class="status warning">Expires in 5 days</span>
+        </div>
+      </div>
+      <div class="floating-card card-3">
+        <span class="icon">🚗</span>
+        <div class="card-info">
+          <strong>RC Status</strong>
+          <span class="status ok">Verified</span>
+        </div>
       </div>
     </div>
 
     <!-- <div class="hero-mockup" id="preview">
       <img src="hero-mockup.png" alt="VehicleDocs HQ Application Mockup" />
     </div> -->
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">About DocAlert</h2>
+      <p class="about-lead" style="font-size: 1.5rem; font-weight: 500; color: var(--primary); margin-bottom: 1.5rem;">
+        We built DocAlert because managing multiple vehicle documents shouldn't feel like a full-time job.
+      </p>
+      <p style="font-size: 1.15rem; color: var(--on-surface-variant); margin-top: 1rem; line-height: 1.8;">
+        DocAlert acts as your personal compliance assistant. We securely store your RC, Insurance, and PUC certificates
+        right on your local system, actively alerting you well before they expire. No more penalties, no more
+        last-minute scrambles—just complete peace of mind on the road.
+      </p>
+    </div>
   </section>
 
   <!-- Features Section -->
@@ -79,10 +122,10 @@
     <div class="pricing-grid" style="display: flex; justify-content: center;">
       <!-- Single Plan -->
       <div class="pricing-card popular" style="max-width: 500px; width: 100%;">
-        <span class="popular-badge">Lifetime License</span>
+        <span class="popular-badge">Annual License</span>
         <h3>Pro License</h3>
         <p>Everything you need for vehicle compliance</p>
-        <div class="price">₹499<span>/lifetime</span></div>
+        <div class="price">₹499<span>/year</span></div>
         <ul class="features-list">
           <li>Unlimited Vehicles</li>
           <li>PUC & Insurance Tracking</li>
@@ -116,21 +159,22 @@
       <div style="margin-top: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
         <input type="email" id="modal-user-email" placeholder="name@example.com" required />
       </div>
-      <button id="modal-proceed-btn" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Continue to Payment</button>
+      <button id="modal-proceed-btn" class="btn btn-primary"
+        style="width: 100%; font-size: 1.1rem; padding: 1rem;">Continue to Payment</button>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
     <div style="margin-bottom: 2.5rem;">
-      <a href="#" class="logo" style="display: block; margin-bottom: 1rem;">VehicleDocs HQ</a>
+      <a href="#" class="logo" style="display: block; margin-bottom: 1rem;">DocAlert</a>
       <div class="nav-links" style="display: flex; justify-content: center; gap: 2rem;">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
         <a href="#">Contact Us</a>
       </div>
     </div>
-    <p>© 2026 VehicleDocs HQ. All rights reserved.</p>
+    <p>© 2026 DocAlert. All rights reserved.</p>
   </footer>
 
 </body>

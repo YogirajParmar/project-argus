@@ -188,10 +188,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 800px;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-badge {
@@ -213,6 +216,116 @@ section {
   justify-content: center;
   margin-top: 2rem;
 }
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 380px;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: var(--primary);
+  filter: blur(120px);
+  opacity: 0.15;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.floating-card {
+  position: absolute;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--outline-variant);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+  min-width: 250px;
+}
+
+.floating-card .icon {
+  font-size: 2rem;
+  background: var(--surface-container-lowest);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.floating-card .card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.floating-card strong {
+  font-size: 1.1rem;
+  color: var(--on-surface);
+}
+
+.floating-card .status {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.status.ok { color: #059669; }
+.status.warning { color: #d97706; }
+.status.alert { color: #dc2626; }
+
+.card-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+  transform: rotate(-5deg);
+}
+
+.card-2 {
+  bottom: 10%;
+  right: 15%;
+  animation-delay: 1.5s;
+  transform: rotate(3deg);
+}
+
+.card-3 {
+  top: 30%;
+  right: 5%;
+  animation-delay: 3s;
+  transform: rotate(8deg);
+  z-index: 2;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(auto); }
+  50% { transform: translateY(-15px) rotate(auto); }
+}
+
+/* About Section */
+.about-section {
+  background: var(--surface-container-lowest);
+  padding: 6rem 2rem;
+  margin: 2rem auto;
+  border-radius: 4rem;
+  box-shadow: var(--shadow-ambient);
+}
+
 
 .hero-mockup {
   margin-top: 5rem;
