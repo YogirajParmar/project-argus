@@ -55,7 +55,7 @@ if (buyBtn && emailModal) {
 
     try {
       // 1. First create an order via your Worker
-      const orderRes = await fetch('http://localhost:8787/payment/create-order', {
+      const orderRes = await fetch('https://license-server.docalert.workers.dev/payment/create-order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: userEmail })
