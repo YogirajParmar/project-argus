@@ -89,11 +89,48 @@ nav {
   box-shadow: var(--shadow-ambient);
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary);
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
+  color: var(--on-surface);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex: 0 0 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.brand-footer .brand-text {
+  font-size: 1.5rem;
 }
 
 .nav-links {
@@ -111,6 +148,10 @@ nav {
 
 .nav-links a:hover {
   color: var(--primary);
+}
+
+.brand:hover .brand-text {
+  color: var(--primary-container);
 }
 
 /* Buttons */
@@ -560,6 +601,10 @@ footer {
   padding: 4rem 2rem;
   text-align: center;
   border-top: 1px solid var(--outline-variant);
+}
+
+footer .brand {
+  justify-content: center;
 }
 
 /* Responsive */
