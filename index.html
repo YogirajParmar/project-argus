@@ -151,9 +151,12 @@
   <!-- Download CTA Section -->
   <section id="download" class="download-cta" style="display: none;">
     <h2>Ready to simplify your life?</h2>
-    <p>Join thousands of users who never miss a document expiry.</p>
+    <p>Download the app and keep your encrypted license file somewhere safe. You will need it during activation.</p>
     <a id="download-link" href="#" class="btn btn-primary" aria-disabled="true">
       Download for Windows
+    </a>
+    <a id="license-link" href="#" class="btn btn-secondary" aria-disabled="true" style="margin-top: 1rem;">
+      Download your license file
     </a>
     <p class="version-info">Version 2.0.4 | Requires Windows 10+</p>
   </section>
@@ -167,6 +170,17 @@
       <div style="margin-top: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
         <input type="email" id="modal-user-email" placeholder="name@example.com" required />
       </div>
+      <!--
+      <div style="margin-bottom: 1.5rem; text-align: left;">
+        <label for="modal-machine-file" style="display: block; margin-bottom: 0.5rem; color: var(--on-surface); font-weight: 600;">
+          Upload your machine request file
+        </label>
+        <input type="file" id="modal-machine-file" accept=".license,.json" required />
+        <p style="font-size: 0.9rem; color: var(--on-surface-variant); margin-top: 0.75rem;">
+          Export this file from DocAlert before purchase so your license is locked to the correct device.
+        </p>
+      </div>
+      -->
       <button id="modal-proceed-btn" class="btn btn-primary"
         style="width: 100%; font-size: 1.1rem; padding: 1rem;">Continue to Payment</button>
     </div>
